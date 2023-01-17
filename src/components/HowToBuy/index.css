@@ -1,0 +1,119 @@
+.howtobuy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.howtobuy h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 0px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+.displays {
+    display: flex;
+    justify-content: space-around;
+}
+.displays img {
+    width: 220px;
+    margin-bottom: -20px;
+}
+.displays p {
+    font-size: 12px;
+    font-weight: 700;
+    width: 250px;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+.displays h3 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -15px;
+    margin-top: 0px;
+    font-weight: 800;
+}
+.displays > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+.singlescreen {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.singlescreen img {
+    width: 760px;
+}
+
+.buynowbutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buynowbutton img {
+    width: 230px;
+}
+.howtovideo {
+    position: absolute;
+    top: 63px;
+    left: 55px;
+    width: 640px;
+    height: 425px;
+    background-color: #34425b;
+}
+
+@media only screen and (max-width: 1024px) {
+    .displays > div {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .titlescreen {
+        margin-left: -20px;
+    }
+    .displays {
+        display: block;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .singlescreen img {
+        width: 600px;
+    }
+    .howtovideo {
+        top: 50px;
+        left: 45px;
+        width: 505px;
+        height: 334px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .displays {
+        display: block;
+    }
+    .buynowbutton img {
+        width: 180px;
+    }
+    .howtobuy h1 {
+        font-size: 30px;
+    }
+    .displays h3 {
+        font-size: 25px;
+    }
+    .singlescreen img {
+        width: 400px;
+    }
+    .howtovideo {
+        top: 33px;
+        left: 30px;
+        width: 337px;
+        height: 225px;
+    }
+}

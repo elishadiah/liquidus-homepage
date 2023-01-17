@@ -1,0 +1,40 @@
+.FooterBar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.logobottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.logobottom > a > img {
+    width: 90px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar {
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .FooterBar {
+        justify-content: space-between;
+        padding-left: 2%;
+        z-index: 9;
+    }
+
+    .logobottom {
+        position: relative;
+    }
+    .logobottom > a > img {
+        width: 50px;
+        margin-left: -5%;
+    }
+    .navbar {
+        margin-right: 0px;
+    }
+}
